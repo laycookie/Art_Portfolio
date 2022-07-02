@@ -1,19 +1,21 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
+import Navbar from '../../components/Navbar'
 
 const ContactPage = () => {
   return (
     <>
-      <MetaTags title="Contact" description="Contact page" />
+      <MetaTags title="Contact" description="Index page" />
 
-      <h1>ContactPage</h1>
-      <p>
-        Find me in <code>./web/src/pages/ContactPage/ContactPage.tsx</code>
-      </p>
-      <p>
-        My default route is named <code>contact</code>, link to me with `
-        <Link to={routes.contact()}>Contact</Link>`
-      </p>
+      <header>
+        <nav>
+          <Navbar 
+          names = {["Home", "Contact"]}
+          links = {["/", "/contact"]} 
+          offSetBottomElement = {32}/>
+        </nav>
+      </header>
+      <h1 className='text-red-500'>Contact</h1>
     </>
   )
 }
