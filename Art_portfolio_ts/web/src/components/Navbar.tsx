@@ -7,7 +7,7 @@ interface MessageProps {
 }
 
 //This one is good for up to 3 links.
-export default function Navbar({ names, links }) {
+export default function Navbar({ names, links, offSetBottomElement }) {
     if (names.length > 3)
     {
         throw new Error("Too many names")
@@ -18,16 +18,25 @@ export default function Navbar({ names, links }) {
     }
 
     return (
-        <ul>
+        <ul className={`mb-${offSetBottomElement}`}>
             {names.map((name: string, index: number) => {
-                let shiftVal: number = 96;
-                let classNameLink: string = `text-red-500 bg-red-500 hover:text-white
-                flex justify-around box-border w-96 
-                relative left-[${index * shiftVal}px] py-4 mb-[${shiftVal * ((index / (index + 5e-324)) + 1)}px]
-                transition-all
-                `
+                let spacing: number = 16;;
+                let spacingOffSet = 4;
+                let shiftNavBar: number = 420;
                 return (
-                    <a href = {links[index]} key={index} className={classNameLink} >{name}</a>
+                    <li>
+                        <a href = {links[index]} key={index} 
+                        className='text-red-500 bg-red-500 hover:text-white
+                        flex justify-around box-border relative py-3 -rotate-45
+                        transition-all'
+                        style={{
+                            width: `900px`,
+                            left: `${(index * (spacing * spacingOffSet)) - shiftNavBar}px`,
+                            marginBottom: `${spacing}px`,
+                        }}
+                        >{name}
+                        </a>
+                    </li>
                 )
             })}
         </ul>

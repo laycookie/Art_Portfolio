@@ -10,8 +10,9 @@ const IndexPage = () => {
       <header>
         <nav>
           <Navbar 
-          names = {["Home", "Contact", "testavbc"]}
-          links = {["/", "/contact", "test"]} />
+          names = {["Home", "Contact"]}
+          links = {["/", "/contact"]} 
+          offSetBottomElement = {32}/>
         </nav>
       </header>
       <h1 className='text-red-500'>Art Portfolio</h1>
