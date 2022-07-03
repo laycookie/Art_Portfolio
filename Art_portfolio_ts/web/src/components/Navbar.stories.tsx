@@ -8,17 +8,17 @@ export const oneElementNav = () => {
     return (<Navbar 
     names = {["Home"]}
     links = {["/"]} 
-    offSetBottomElement = {32}/>)
+    offSetBottomElement = {64}/>)
 }
 export const twoElementNav = () => {
     return (<Navbar 
     names = {["Home", "Contact"]}
     links = {["/", "/contact"]} 
-    offSetBottomElement = {32}/>)
+    offSetBottomElement = {128}/>)
 }
 export const threeElementNav = () => {
     return (<Navbar 
     names = {["Back", "Home", "Contact"]}
     links = {["exampleURL", "/", "/contact"]} 
-    offSetBottomElement = {32}/>)
+    offSetBottomElement = {196}/>)
 }

@@ -18,7 +18,9 @@ export default function Navbar({ names, links, offSetBottomElement }) {
     }
 
     return (
-        <ul className={`mb-${offSetBottomElement}`}>
+        <ul style={{
+                margin: `0 0 ${offSetBottomElement}px`
+            }}>
             {names.map((name: string, index: number) => {
                 let spacing: number = 16;;
                 let spacingOffSet = 4;
