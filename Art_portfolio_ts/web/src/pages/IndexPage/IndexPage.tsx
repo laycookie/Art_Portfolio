@@ -17,7 +17,7 @@ const IndexPage = () => {
           offSetBottomElement = {128}/>
         </nav>
       </header>
-      <h1 className='text-red-500'>Art Portfolio</h1>
+      <h1 className='text-red-500 h1Font'>Art Portfolio</h1>
     </>
   )
 }

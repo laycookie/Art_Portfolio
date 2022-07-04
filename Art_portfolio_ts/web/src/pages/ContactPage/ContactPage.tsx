@@ -16,9 +16,9 @@ const ContactPage = () => {
           offSetBottomElement = {128}/>
         </nav>
       </header>
-      <h1 className='text-red-500 flex justify-center'>Contact</h1>
+      <h1 className='text-red-500 flex justify-center h1Font'>Contact</h1>
       <form action="/Contact" method="post"
-      className='flex justify-center flex-col mx-48'>
+      className='mx-[14vw]'>
         <div className='space-x-4 flex justify-center mt-8 mb-4'>
           <input type="text" name="firstName" id='firstName' placeholder="First Name"
           className='drop-shadow h-8 w-full rounded-lg' style={{padding: "0 10px"}}/>
@@ -32,7 +32,11 @@ const ContactPage = () => {
             className='drop-shadow h-8 w-full mb-4 rounded-lg' style={{padding: "0 10px"}}/>
           <textarea name="contant" id='contant' placeholder='Contant'
             className='drop-shadow h-32 w-full mb-4 rounded-lg' style={{padding: "6px 10px"}}/>
+            
         </div>
+        <input type="submit" 
+            className='transition-all py-2 px-4 bg-red-500 text-red-500 hover:text-white rounded-md
+            flex mx-auto'/>
       </form>
     </>
   )

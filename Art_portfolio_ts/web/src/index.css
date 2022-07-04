@@ -11,3 +11,8 @@
 /**
  * END --- SETUP TAILWINDCSS EDIT
  */
+
+ .h1Font {
+    font-family: Pacifico, cursive;
+    font-size: 4rem;
+ }
