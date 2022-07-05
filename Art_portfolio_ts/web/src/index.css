@@ -16,3 +16,8 @@
     font-family: Pacifico, cursive;
     font-size: 4rem;
  }
+ 
+ .customIntroText{
+   border-bottom: 0.5rem solid;
+   border-color: rgb(239 68 68);
+ }

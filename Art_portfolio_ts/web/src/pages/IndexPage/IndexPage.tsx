@@ -4,6 +4,10 @@ import Navbar from '../../components/Navbar'
 import Login from '../../components/Login'
 
 const IndexPage = () => {
+  let TitleSeconderyText = document.getElementById('TitleSeconderyText')
+  let TitleText = document.getElementById('TitleText')
+
+  
   return (
     <>
       <MetaTags title="Home" description="Index page" />
@@ -17,7 +21,13 @@ const IndexPage = () => {
           offSetBottomElement = {128}/>
         </nav>
       </header>
-      <h1 className='text-red-500 h1Font'>Art Portfolio</h1>
+      <div className="transition-all flex justify-center" id='TitleText'>
+        <div>
+          <h1 className='text-red-500 h1Font customIntroText '>Art Portfolio</h1>
+          <h3 className='text-red-500 flex justify-center' id='TitleSecondaryText'>By Dennis Lonoshchuk</h3>
+        </div>
+      </div>
+      
     </>
   )
 }
