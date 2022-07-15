@@ -26,8 +26,8 @@ export default function Navbar({ names, links, offSetBottomElement }) {
                 let spacingOffSet = 4;
                 let shiftNavBar: number = 420;
                 return (
-                    <li>
-                        <a href = {links[index]} key={index} 
+                    <li key={index}>
+                        <a href = {links[index]} 
                         className='text-red-500 bg-red-500 hover:text-white
                         flex justify-around box-border relative py-3 -rotate-45
                         transition-all'
