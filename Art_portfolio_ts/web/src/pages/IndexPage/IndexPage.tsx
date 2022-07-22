@@ -25,14 +25,12 @@ const IndexPage = () => {
   const [arrowLength, setArrowLength] = useState(94)
 
   function onHoverSetArrowLength() {
-    console.log('Enter')
     setArrowOffSet(48)
     setArrowLength(94)
   }
   function offHoverSetArrowLength() {
     setArrowOffSet(0)
     setArrowLength(0)
-    console.log('Leave')
   }
   //End of button animation
 
@@ -75,7 +73,11 @@ const IndexPage = () => {
       <div className="flex justify-center mt-24 transition-all">
         <button
           className="transition-all"
-          style={{ transform: `translate(0, -${arrowOffSet}px)` }}
+          style={{
+            transform: `translate(0, -${arrowOffSet}px)`,
+          }}
+          onMouseEnter={onHoverSetArrowLength}
+          onMouseLeave={offHoverSetArrowLength}
         >
           <svg
             width="full"
@@ -85,9 +87,8 @@ const IndexPage = () => {
             className="relative translate-y-12 transition-all"
             style={{
               height: `${arrowLength}px`,
+              width: 'full',
             }}
-            onMouseEnter={onHoverSetArrowLength}
-            onMouseLeave={offHoverSetArrowLength}
           >
             <path
               d="M4 90V4"
@@ -104,8 +105,6 @@ const IndexPage = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="flex justify-center"
-            onMouseEnter={onHoverSetArrowLength}
-            onMouseLeave={offHoverSetArrowLength}
           >
             <path
               fillRule="evenodd"
