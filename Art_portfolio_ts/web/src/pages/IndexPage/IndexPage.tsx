@@ -143,19 +143,38 @@ const IndexPage = () => {
           <article>
             <h2
               className="h1Font flex justify-center
-        pt-32 pb-64"
+        pt-20 pb-48"
             >
               Cerial pakageing
             </h2>
-            <div className="flex justify-center">
-              <p className="mr-48 text-xl font-bold" style={{ width: '48rem' }}>
+            <div className="flex justify-center items-center pb-56 xl:flex-row flex-col">
+              <p
+                className="text-2xl font-bold
+              xl:w-[36rem] xl:mr-24 xl:ml-12 xl:mb-0
+              mb-24 mx-24"
+              >
                 The following packaging is of a blueberry cereals made by
                 “Generic C” company. There are made for people who want more
                 healthy cereals that have similar taste to regular cereals.
               </p>
-              <img src="#" alt="Cereals box" />
+              <a href="/CerialPakageing" draggable="false">
+                <img
+                  src="images/pakageCerial.svg"
+                  alt="Cereals box"
+                  draggable="false"
+                  className="transition-all sm:w-[32rem] xl:ml-0 xl:mr-12
+                  w-[26rem]"
+                  id="shadowBoxForImage"
+                />
+              </a>
+            </div>
+
+            <div className="flex justify-center">
+              <canvas>For 3D moddle</canvas>
             </div>
           </article>
+          {/* Makes sure that the page takes up the full height of the screen */}
+          <div />
         </section>
         {/* End of Second Section of the page */}
         <hr className="bg-red-500 h-2" />
@@ -164,7 +183,7 @@ const IndexPage = () => {
           <div>
             <h2
               className="text-blue-400 h1Font flex justify-center
-          pt-32 pb-64"
+          pt-28 pb-52"
             >
               Stress amoung teenagers
             </h2>
