@@ -1,9 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
+/* Without first line gives some invalide errors */
 import { useState } from 'react'
 
 import { MetaTags } from '@redwoodjs/web'
 
 import Login from '../../components/Login'
 import Navbar from '../../components/Navbar'
+import Section from '../../components/Section'
 
 const IndexPage = () => {
   //Title of the page
@@ -139,47 +142,43 @@ const IndexPage = () => {
 
       <main>
         {/* Second Section of the page (Cerial pakageing)*/}
-        <section className="bg-green-400 text-blue-500">
-          <article>
-            <h2
-              className="h1Font flex justify-center
+        <Section bgColor="bg-green-400" textColor="text-blue-500">
+          <h2
+            className="h1Font flex justify-center
         pt-20 pb-48"
-            >
-              Cerial pakageing
-            </h2>
-            <div className="flex justify-center items-center pb-56 xl:flex-row flex-col">
-              <p
-                className="text-2xl font-bold
+          >
+            Cerial pakageing
+          </h2>
+          <div className="flex justify-center items-center pb-56 xl:flex-row flex-col">
+            <p
+              className="text-2xl font-bold
               xl:w-[36rem] xl:mr-24 xl:ml-12 xl:mb-0
               mb-24 mx-24"
-              >
-                The following packaging is of a blueberry cereals made by
-                “Generic C” company. There are made for people who want more
-                healthy cereals that have similar taste to regular cereals.
-              </p>
-              <a href="/CerialPakageing" draggable="false">
-                <img
-                  src="images/pakageCerial.svg"
-                  alt="Cereals box"
-                  draggable="false"
-                  className="transition-all sm:w-[32rem] xl:ml-0 xl:mr-12
+            >
+              The following packaging is of a blueberry cereals made by “Generic
+              C” company. There are made for people who want more healthy
+              cereals that have similar taste to regular cereals.
+            </p>
+            <a href="/CerialPakageing" draggable="false">
+              <img
+                src="images/pakageCerial.svg"
+                alt="Cereals box"
+                draggable="false"
+                className="transition-all sm:w-[32rem] xl:ml-0 xl:mr-12
                   w-[26rem]"
-                  id="shadowBoxForImage"
-                />
-              </a>
-            </div>
+                id="shadowBoxForImage"
+              />
+            </a>
+          </div>
 
-            <div className="flex justify-center">
-              <canvas>For 3D moddle</canvas>
-            </div>
-          </article>
-          {/* Makes sure that the page takes up the full height of the screen */}
-          <div />
-        </section>
+          <div className="flex justify-center">
+            <canvas>For 3D moddle</canvas>
+          </div>
+        </Section>
         {/* End of Second Section of the page */}
         <hr className="bg-red-500 h-2" />
         {/* Third Section of the page (Stress amoung teenagers)*/}
-        <section className="bg-red-200 text-gray-500">
+        <Section bgColor="bg-red-200" textColor="text-gray-500">
           <div>
             <h2
               className="text-blue-400 h1Font flex justify-center
@@ -195,11 +194,11 @@ const IndexPage = () => {
               opposite of stress and what teenagers should feel like.
             </p>
           </div>
-        </section>
+        </Section>
         {/* End of Third Section of the page */}
         <hr className="bg-red-500 h-2" />
         {/* Fourth Section of the page (Carrer Path)*/}
-        <section className="bg-blue-900 text-white">
+        <Section bgColor="bg-blue-900" textColor="text-white">
           <h2
             className="text-7xl flex justify-center font-bold
           pt-32 pb-48"
@@ -211,23 +210,48 @@ const IndexPage = () => {
             This is pretty close to me because this is a career path that I'm
             choosing.
           </p>
-        </section>
+        </Section>
         {/* End of Fourth Section of the page */}
         <hr className="bg-red-500 h-2" />
         {/* Fifth Section of the page (Emulate a Designer)*/}
-        <section className="bg-black text-white">
-          <h2
-            className="text-7xl flex justify-center font-bold
-          pt-32 pb-48"
-          >
-            Emulate a Designer
-          </h2>
-          <p className="text-2xl">
-            The following project is emulation of the logo designer Paul Rand,
-            an artist responsible for creating logos for the legenderie
-            companies like, abc, IBM, and Apple.
-          </p>
-        </section>
+        <Section
+          bgColor="bg-black"
+          textColor="text-white
+        "
+        >
+          <article>
+            <h2
+              className="text-7xl flex justify-center font-bold
+          pt-24 pb-44"
+            >
+              Emulate a Designer
+            </h2>
+            <div
+              className="flex justify-center
+          pb-32"
+            >
+              <a href="#">
+                <img
+                  src="images/EmulateaDesignerDesign.png"
+                  alt="Emulate a Designer Design"
+                  className="rounded-lg
+            w-[64rem]"
+                />
+              </a>
+            </div>
+            <div className="flex justify-center">
+              <p
+                className="text-2xl
+           w-[86rem]"
+              >
+                The following project is emulation of the logo designer Paul
+                Rand, an artist responsible for creating logos for the
+                legenderie companies like, abc, IBM, and Apple.
+              </p>
+            </div>
+          </article>
+          <div />
+        </Section>
         {/* End of Fifth Section of the page */}
       </main>
     </>
