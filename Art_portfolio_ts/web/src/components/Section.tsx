@@ -14,7 +14,6 @@ export default function Section(props: MessageProps) {
   const elementRef = useRef(null)
   const [windowSize, setWindowSize] = useState(getWindowSize())
   const [initialElementHeight, setInitialElementHeight] = useState(null)
-  const [elementHeight, setElementHeight] = useState(null)
 
   //Set hight of the section to 100% of the viewport
   function resizeElement() {
@@ -37,14 +36,12 @@ export default function Section(props: MessageProps) {
   useEffect(() => {
     //Saves elements highet on load
     setInitialElementHeight(elementRef.current?.clientHeight)
-    setElementHeight(elementRef.current?.clientHeight)
   }, [])
 
   //verifyes element height (Honestly the ressoning behind this is extreamly curesdly it has to do with onLoad not working if there are no imagies)
   function verifyElementHeight() {
     elementRef.current.style.height = `${elementRef.current?.clientHeight}px`
     setInitialElementHeight(elementRef.current?.clientHeight)
-    setElementHeight(elementRef.current?.clientHeight)
 
     resizeElement()
 
@@ -53,6 +50,10 @@ export default function Section(props: MessageProps) {
     }
     window.addEventListener('resize', handleWindowResize)
   }
+
+  useEffect(() => {
+    resizeElement()
+  }, [verifyElementHeight])
 
   useEffect(() => {
     //makes sure that the code dosent run only when the varible is assigned a proper value
