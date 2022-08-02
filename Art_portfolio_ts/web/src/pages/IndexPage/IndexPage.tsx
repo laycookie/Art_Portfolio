@@ -200,7 +200,8 @@ const IndexPage = () => {
         {/* Fourth Section of the page (Carrer Path)*/}
         <Section bgColor="bg-blue-900" textColor="text-white">
           <h2
-            className="text-7xl flex justify-center font-bold
+            className="flex justify-center font-bold
+          text-7xl
           pt-32 pb-48"
           >
             Carrer Path
@@ -219,37 +220,36 @@ const IndexPage = () => {
           textColor="text-white
         "
         >
-          <article>
-            <h2
-              className="text-7xl flex justify-center font-bold
+          <h2
+            className="text-7xl flex justify-center font-bold
           pt-24 pb-44"
-            >
-              Emulate a Designer
-            </h2>
-            <div
-              className="flex justify-center
+          >
+            Emulate a Designer
+          </h2>
+          <div
+            className="flex justify-center
           pb-32"
-            >
-              <a href="#">
-                <img
-                  src="images/EmulateaDesignerDesign.png"
-                  alt="Emulate a Designer Design"
-                  className="rounded-lg
+          >
+            <a href="#">
+              <img
+                src="images/EmulateaDesignerDesign.png"
+                alt="Emulate a Designer Design"
+                className="rounded-lg
             w-[64rem]"
-                />
-              </a>
-            </div>
-            <div className="flex justify-center">
-              <p
-                className="text-2xl
+              />
+            </a>
+          </div>
+          <div className="flex justify-center">
+            <p
+              className="text-2xl
            w-[86rem]"
-              >
-                The following project is emulation of the logo designer Paul
-                Rand, an artist responsible for creating logos for the
-                legenderie companies like, abc, IBM, and Apple.
-              </p>
-            </div>
-          </article>
+            >
+              The following project is emulation of the logo designer Paul Rand,
+              an artist responsible for creating logos for the legenderie
+              companies like, abc, IBM, and Apple.
+            </p>
+          </div>
+
           <div />
         </Section>
         {/* End of Fifth Section of the page */}
