@@ -20,10 +20,8 @@ export default function Section(props: MessageProps) {
     if (initialElementHeight == null) return
 
     if (windowSize.innerHeight > initialElementHeight) {
-      console.log('resizing', initialElementHeight, windowSize.innerHeight)
       elementRef.current.style.height = `100vh`
     } else {
-      console.log('not resize', initialElementHeight, windowSize.innerHeight)
       elementRef.current.style.height = `auto`
     }
   }

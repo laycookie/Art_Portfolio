@@ -7,6 +7,7 @@ import { MetaTags } from '@redwoodjs/web'
 import Login from '../../components/Login'
 import Navbar from '../../components/Navbar'
 import Section from '../../components/Section'
+import Threed_model from '../../components/Threed_model'
 
 const IndexPage = () => {
   //Title of the page
@@ -172,7 +173,7 @@ const IndexPage = () => {
           </div>
 
           <div className="flex justify-center">
-            <canvas>For 3D moddle</canvas>
+            <Threed_model></Threed_model>
           </div>
         </Section>
         {/* End of Second Section of the page */}
@@ -200,8 +201,8 @@ const IndexPage = () => {
         {/* Fourth Section of the page (Carrer Path)*/}
         <Section bgColor="bg-blue-900" textColor="text-white">
           <h2
-            className="flex justify-center font-bold
-          text-7xl
+            className="flex justify-center
+          text-7xl font-bold
           pt-32 pb-48"
           >
             Carrer Path
