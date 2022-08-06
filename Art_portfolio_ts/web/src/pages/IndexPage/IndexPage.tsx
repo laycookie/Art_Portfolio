@@ -145,12 +145,12 @@ const IndexPage = () => {
         {/* Second Section of the page (Cerial pakageing)*/}
         <Section bgColor="bg-green-400" textColor="text-blue-500">
           <h2
-            className="h1Font flex justify-center
+            className="h1Font flex justify-center relative
         pt-20 pb-48 z-10"
           >
             Cerial pakageing
           </h2>
-          <div className="flex justify-center items-center pb-36 xl:flex-row flex-col z-10">
+          <div className="flex justify-center items-center relative pb-36 xl:flex-row flex-col z-10">
             <p
               className="text-2xl font-bold
               xl:w-[36rem] xl:mr-24 xl:ml-12 xl:mb-0
@@ -172,7 +172,7 @@ const IndexPage = () => {
             </a>
           </div>
 
-          <div className="flex justify-center z-10">
+          <div className="flex justify-center relative z-10">
             <Threed_model></Threed_model>
           </div>
           <div className="w-full relative z-0">
