@@ -10,12 +10,12 @@ export default function Threed_model() {
     //basic setup
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(
-      75,
+      50,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
     )
-    camera.position.z = 9
+    camera.position.z = 12
 
     const renderer = new THREE.WebGLRenderer({
       canvas: document.querySelector('#canvas'),
@@ -49,6 +49,13 @@ export default function Threed_model() {
     })
     //adding lights
     const light = new THREE.AmbientLight(0xffffff, 1)
+
+    const pointLight1 = new THREE.PointLight(0xffffff, 0.15, 50)
+    const pointLight2 = new THREE.PointLight(0xffffff, 0.1, 50)
+    pointLight1.position.set(5, 5, 5)
+    pointLight2.position.set(-5, 0, -5)
+    scene.add(pointLight1)
+    scene.add(pointLight2)
     scene.add(light)
 
     //rendering

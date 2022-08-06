@@ -146,11 +146,11 @@ const IndexPage = () => {
         <Section bgColor="bg-green-400" textColor="text-blue-500">
           <h2
             className="h1Font flex justify-center
-        pt-20 pb-48"
+        pt-20 pb-48 z-10"
           >
             Cerial pakageing
           </h2>
-          <div className="flex justify-center items-center pb-56 xl:flex-row flex-col">
+          <div className="flex justify-center items-center pb-36 xl:flex-row flex-col z-10">
             <p
               className="text-2xl font-bold
               xl:w-[36rem] xl:mr-24 xl:ml-12 xl:mb-0
@@ -172,8 +172,78 @@ const IndexPage = () => {
             </a>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center z-10">
             <Threed_model></Threed_model>
+          </div>
+          <div className="w-full relative z-0">
+            <svg
+              className="absolute right-0 bottom-0 z-0"
+              width="574"
+              height="1885"
+              viewBox="0 0 574 1885"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M165 1885H85H0C0 1839.44 36.9365 1802.5 82.5 1802.5C128.063 1802.5 165 1839.44 165 1885Z"
+                fill="white"
+                fillOpacity="0.45"
+              />
+              <circle
+                cx="381.5"
+                cy="1718.5"
+                r="82.5"
+                fill="white"
+                fillOpacity="0.45"
+              />
+              <circle
+                cx="277.5"
+                cy="1777.5"
+                r="82.5"
+                fill="white"
+                fillOpacity="0.45"
+              />
+              <path
+                d="M299 1806.5C299 1839.55 279.565 1868.06 251.5 1881.23L213 1868.5L178.5 1879.75C152.059 1866 134 1838.36 134 1806.5C134 1760.94 170.937 1724 216.5 1724C262.063 1724 299 1760.94 299 1806.5Z"
+                fill="white"
+                fillOpacity="0.45"
+              />
+              <path
+                d="M248 1818.5C248 1848.31 240.691 1868 217 1882.5C217 1882.5 182.755 1882.5 167 1882.5C147.258 1882.5 113.436 1882.5 113.436 1882.5C94.8628 1867.37 83 1844.32 83 1818.5C83 1772.94 119.937 1736 165.5 1736C211.063 1736 248 1772.94 248 1818.5Z"
+                fill="white"
+                fillOpacity="0.45"
+              />
+              <circle
+                cx="201.5"
+                cy="1695.5"
+                r="82.5"
+                fill="white"
+                fillOpacity="0.45"
+              />
+              <circle
+                cx="328.5"
+                cy="1718.5"
+                r="82.5"
+                fill="white"
+                fillOpacity="0.45"
+              />
+              <path
+                d="M393.165 167.177C393.165 74.0786 481.011 0 584.829 0C688.647 0 595.81 1885 595.81 1885H101.5C134.939 1798.46 287.598 1769.52 393.165 1750.86V167.177Z"
+                fill="white"
+              />
+              <path
+                d="M448 139L448 1710"
+                stroke="#C8C8C8"
+                strokeWidth="7"
+                strokeLinecap="round"
+              />
+              <path
+                d="M493 139V1678"
+                stroke="#C8C8C8"
+                strokeWidth="7"
+                strokeLinecap="round"
+              />
+            </svg>
           </div>
         </Section>
         {/* End of Second Section of the page */}
@@ -250,8 +320,6 @@ const IndexPage = () => {
               companies like, abc, IBM, and Apple.
             </p>
           </div>
-
-          <div />
         </Section>
         {/* End of Fifth Section of the page */}
       </main>
