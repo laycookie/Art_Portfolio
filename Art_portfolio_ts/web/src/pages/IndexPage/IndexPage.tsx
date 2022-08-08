@@ -143,7 +143,7 @@ const IndexPage = () => {
 
       <main>
         {/* Second Section of the page (Cerial pakageing)*/}
-        <Section bgColor="bg-green-400" textColor="text-blue-500">
+        <Section bgColor="bg-cGreen" textColor="text-blue-500">
           <h2
             className="h1Font flex justify-center relative
         pt-20 pb-48 z-10"
@@ -269,7 +269,7 @@ const IndexPage = () => {
         {/* End of Third Section of the page */}
         <hr className="bg-red-500 h-2" />
         {/* Fourth Section of the page (Carrer Path)*/}
-        <Section bgColor="bg-blue-900" textColor="text-white">
+        <Section bgColor="bg-darkBlue" textColor="text-white">
           <h2
             className="flex justify-center
           text-7xl font-bold
