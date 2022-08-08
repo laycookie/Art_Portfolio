@@ -14,12 +14,13 @@ export default function Section(props: MessageProps) {
   const elementRef = useRef(null)
   const [windowSize, setWindowSize] = useState(getWindowSize())
   const [initialElementHeight, setInitialElementHeight] = useState(null)
+  const [finalElementHeight, setFinalElementHeight] = useState(null)
 
   //Set hight of the section to 100% of the viewport
   function resizeElement() {
-    if (initialElementHeight == null) return
+    if (finalElementHeight == null) return
 
-    if (windowSize.innerHeight > initialElementHeight) {
+    if (windowSize.innerHeight > finalElementHeight) {
       elementRef.current.style.height = `100vh`
     } else {
       elementRef.current.style.height = `auto`
@@ -39,7 +40,7 @@ export default function Section(props: MessageProps) {
   //verifyes element height (Honestly the ressoning behind this is extreamly curesdly it has to do with onLoad not working if there are no imagies)
   function verifyElementHeight() {
     elementRef.current.style.height = `${elementRef.current?.clientHeight}px`
-    setInitialElementHeight(elementRef.current?.clientHeight)
+    setFinalElementHeight(elementRef.current?.clientHeight)
 
     resizeElement()
 
@@ -68,14 +69,15 @@ export default function Section(props: MessageProps) {
     //recursive function that verefies that the element height is correct
     function findImgInChildren(element) {
       for (const i in element) {
+        console.log(i)
         //check if img
         if (element[i].type == 'img') {
           return true
         }
 
         let newChiled
-        if (element[i].props?.children == undefined) {
-          return false
+        if (element[i].props?.children === undefined) {
+          continue
         } else {
           newChiled = element[i].props.children
         }
@@ -92,7 +94,9 @@ export default function Section(props: MessageProps) {
 
     //if findImgInChildren() returns true then the code will wait until the image will be Loadded and then it will asign the highet
     if (findImgInChildren(children)) return
-    elementRef.current.style.height = `100vh`
+
+    setFinalElementHeight(elementRef.current?.clientHeight)
+    resizeElement()
 
     function handleWindowResize() {
       setWindowSize(getWindowSize())
@@ -106,11 +110,11 @@ export default function Section(props: MessageProps) {
   }, [windowSize])
   return (
     <section
-      className={props.bgColor + ' ' + props.textColor}
+      className={props.bgColor + ' ' + props.textColor + ' relative'}
       ref={elementRef}
       onLoad={verifyElementHeight}
     >
-      <article>{props.children}</article>
+      {props.children}
     </section>
   )
 }

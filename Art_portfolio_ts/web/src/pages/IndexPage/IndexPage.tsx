@@ -142,7 +142,7 @@ const IndexPage = () => {
       </section>
 
       <main>
-        {/* Second Section of the page (Cerial pakageing)*/}
+        {/* First Section of the page (Cerial pakageing)*/}
         <Section bgColor="bg-cGreen" textColor="text-blue-500">
           <h2
             className="h1Font flex justify-center relative
@@ -248,7 +248,7 @@ const IndexPage = () => {
         </Section>
         {/* End of Second Section of the page */}
         <hr className="bg-red-500 h-2" />
-        {/* Third Section of the page (Stress amoung teenagers)*/}
+        {/* Second Section of the page (Stress amoung teenagers)*/}
         <Section bgColor="bg-red-200" textColor="text-gray-500">
           <div>
             <h2
@@ -268,7 +268,7 @@ const IndexPage = () => {
         </Section>
         {/* End of Third Section of the page */}
         <hr className="bg-red-500 h-2" />
-        {/* Fourth Section of the page (Carrer Path)*/}
+        {/* Third Section of the page (Carrer Path)*/}
         <Section bgColor="bg-darkBlue" textColor="text-white">
           <h2
             className="flex justify-center
@@ -285,12 +285,8 @@ const IndexPage = () => {
         </Section>
         {/* End of Fourth Section of the page */}
         <hr className="bg-red-500 h-2" />
-        {/* Fifth Section of the page (Emulate a Designer)*/}
-        <Section
-          bgColor="bg-black"
-          textColor="text-white
-        "
-        >
+        {/* Fourth Section of the page (Emulate a Designer)*/}
+        <Section bgColor="bg-black" textColor="text-white">
           <h2
             className="text-7xl flex justify-center font-bold
           pt-24 pb-44"
@@ -301,24 +297,46 @@ const IndexPage = () => {
             className="flex justify-center
           pb-32"
           >
-            <a href="#">
-              <img
-                src="images/EmulateaDesignerDesign.png"
-                alt="Emulate a Designer Design"
-                className="rounded-lg
+            <div>
+              <a href="#">
+                <img
+                  src="images/EmulateaDesignerDesign.png"
+                  alt="Emulate a Designer Design"
+                  className="rounded-lg
             w-[64rem]"
-              />
-            </a>
+                  draggable="false"
+                />
+              </a>
+            </div>
           </div>
           <div className="flex justify-center">
             <p
-              className="text-2xl
+              className="text-2xl pb-16
            w-[86rem]"
             >
               The following project is emulation of the logo designer Paul Rand,
               an artist responsible for creating logos for the legenderie
               companies like, abc, IBM, and Apple.
             </p>
+          </div>
+        </Section>
+        {/* End of Fifth Section of the page */}
+        <hr className="bg-red-500 h-2" />
+        {/* Fifth Section of the page (Emulate a Designer)*/}
+        <Section bgColor="bg-white" textColor="text-red-500">
+          <h2 className="text-7xl flex justify-center pt-24 pb-44 h1Font">
+            My first logo
+          </h2>
+          <div className="flex justify-center">
+            <p className="text-black">
+              This is my first four logo designs, for a made up company named
+              Coffee house. I had attempted to make it highly recognizable as
+              well as representative of the business.
+            </p>
+          </div>
+          <div className="bottom-0">
+            <div></div>
+            <img src="images/FirstLogos.png" alt="My first logos" />
           </div>
         </Section>
         {/* End of Fifth Section of the page */}
