@@ -265,6 +265,57 @@ const IndexPage = () => {
               opposite of stress and what teenagers should feel like.
             </p>
           </div>
+          <div className="grid grid-cols-3 px-16">
+            <a href="#" draggable="false">
+              <img
+                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg1.svg"
+                alt="StressAmongTeenagersPg1"
+                draggable="false"
+              />
+            </a>
+            <a href="#" draggable="false">
+              <img
+                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg2.svg"
+                alt="StressAmongTeenagersPg2"
+                draggable="false"
+              />
+            </a>
+            <a href="#" draggable="false">
+              <img
+                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg3.svg"
+                alt="StressAmongTeenagersPg3"
+                draggable="false"
+              />
+            </a>
+            <a href="#" draggable="false">
+              <img
+                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg4.svg"
+                alt="StressAmongTeenagersPg4"
+                draggable="false"
+              />
+            </a>
+            <a href="#" draggable="false">
+              <img
+                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg5.svg"
+                alt="StressAmongTeenagersPg5"
+                draggable="false"
+              />
+            </a>
+            <a href="#" draggable="false">
+              <img
+                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg6.svg"
+                alt="StressAmongTeenagersPg6"
+                draggable="false"
+              />
+            </a>
+            <a href="#" draggable="false">
+              <img
+                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg7.svg"
+                alt="StressAmongTeenagersPg7"
+                draggable="false"
+              />
+            </a>
+          </div>
         </Section>
         {/* End of Third Section of the page */}
         <hr className="bg-red-500 h-2" />
@@ -282,6 +333,16 @@ const IndexPage = () => {
             This is pretty close to me because this is a career path that I'm
             choosing.
           </p>
+          <div className="w-full">
+            <div className="flex justify-center pt-24 pb-64">
+              <img
+                className="shadow-2xl"
+                src="images/WebDevRessons.svg"
+                alt="Ressons why I had chossen Web dev."
+                draggable="false"
+              />
+            </div>
+          </div>
         </Section>
         {/* End of Fourth Section of the page */}
         <hr className="bg-red-500 h-2" />
