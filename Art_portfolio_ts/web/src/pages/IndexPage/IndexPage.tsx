@@ -324,19 +324,24 @@ const IndexPage = () => {
         <hr className="bg-red-500 h-2" />
         {/* Fifth Section of the page (Emulate a Designer)*/}
         <Section bgColor="bg-white" textColor="text-red-500">
-          <h2 className="text-7xl flex justify-center pt-24 pb-44 h1Font">
+          <h2 className="text-7xl flex justify-center pt-24 pb-56 h1Font">
             My first logo
           </h2>
-          <div className="flex justify-center">
+          <div className="flex justify-center pb-32">
             <p className="text-black">
               This is my first four logo designs, for a made up company named
               Coffee house. I had attempted to make it highly recognizable as
               well as representative of the business.
             </p>
           </div>
-          <div className="bottom-0">
-            <div></div>
-            <img src="images/FirstLogos.png" alt="My first logos" />
+          <div className="relative bottom-0">
+            <div className="w-full h-[0.25vw] bg-black" />
+            <img
+              src="images/FirstLogos.png"
+              alt="My first logos"
+              draggable="false"
+            />
+            <div className="w-full h-[0.25vw] bg-black" />
           </div>
         </Section>
         {/* End of Fifth Section of the page */}

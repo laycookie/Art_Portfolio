@@ -69,7 +69,6 @@ export default function Section(props: MessageProps) {
     //recursive function that verefies that the element height is correct
     function findImgInChildren(element) {
       for (const i in element) {
-        console.log(i)
         //check if img
         if (element[i].type == 'img') {
           return true
