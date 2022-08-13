@@ -257,7 +257,7 @@ const IndexPage = () => {
             >
               Stress amoung teenagers
             </h2>
-            <p className="font-bold mx-48 text-2xl">
+            <p className="font-bold mx-48 text-2xl pb-16">
               Stress among teenagers is a minimalistic booklet which was
               designed to give basic information about problem of teenagers.
               Colors were carefully chosen to show the seriousness of the
@@ -265,56 +265,66 @@ const IndexPage = () => {
               opposite of stress and what teenagers should feel like.
             </p>
           </div>
-          <div className="grid grid-cols-3 px-16">
-            <a href="#" draggable="false">
-              <img
-                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg1.svg"
-                alt="StressAmongTeenagersPg1"
-                draggable="false"
-              />
-            </a>
-            <a href="#" draggable="false">
-              <img
-                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg2.svg"
-                alt="StressAmongTeenagersPg2"
-                draggable="false"
-              />
-            </a>
-            <a href="#" draggable="false">
-              <img
-                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg3.svg"
-                alt="StressAmongTeenagersPg3"
-                draggable="false"
-              />
-            </a>
-            <a href="#" draggable="false">
-              <img
-                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg4.svg"
-                alt="StressAmongTeenagersPg4"
-                draggable="false"
-              />
-            </a>
-            <a href="#" draggable="false">
-              <img
-                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg5.svg"
-                alt="StressAmongTeenagersPg5"
-                draggable="false"
-              />
-            </a>
-            <a href="#" draggable="false">
-              <img
-                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg6.svg"
-                alt="StressAmongTeenagersPg6"
-                draggable="false"
-              />
-            </a>
-            <a href="#" draggable="false">
-              <img
-                src="images/StressAmongTeenagersProj/StressAmongTeenagersPg7.svg"
-                alt="StressAmongTeenagersPg7"
-                draggable="false"
-              />
-            </a>
+          <div className="flex justify-center pb-32">
+            <div className="grid md:w-[48rem] sm:w-[36rem] w-[24rem]
+            lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+              <a href="#" draggable="false">
+                <img
+                  src="images/StressAmongTeenagersProj/StressAmongTeenagersPg1.svg"
+                  alt="StressAmongTeenagersPg1"
+                  draggable="false"
+                  className='gridElement'
+                />
+              </a>
+              <a href="#" draggable="false">
+                <img
+                  src="images/StressAmongTeenagersProj/StressAmongTeenagersPg2.svg"
+                  alt="StressAmongTeenagersPg2"
+                  draggable="false"
+                  className='gridElement'
+                />
+              </a>
+              <a href="#" draggable="false">
+                <img
+                  src="images/StressAmongTeenagersProj/StressAmongTeenagersPg3.svg"
+                  alt="StressAmongTeenagersPg3"
+                  draggable="false"
+                  className='gridElement'
+                />
+              </a>
+              <a href="#" draggable="false">
+                <img
+                  src="images/StressAmongTeenagersProj/StressAmongTeenagersPg4.svg"
+                  alt="StressAmongTeenagersPg4"
+                  draggable="false"
+                  className='gridElement'
+                />
+              </a>
+              <a href="#" draggable="false">
+                <img
+                  src="images/StressAmongTeenagersProj/StressAmongTeenagersPg5.svg"
+                  alt="StressAmongTeenagersPg5"
+                  draggable="false"
+                  className='gridElement'
+                />
+              </a>
+              <a href="#" draggable="false">
+                <img
+                  src="images/StressAmongTeenagersProj/StressAmongTeenagersPg6.svg"
+                  alt="StressAmongTeenagersPg6"
+                  draggable="false"
+                  className='gridElement'
+                />
+              </a>
+              <a href="#" draggable="false">
+                <img
+                  src="images/StressAmongTeenagersProj/StressAmongTeenagersPg7.svg"
+                  alt="StressAmongTeenagersPg7"
+                  draggable="false"
+                  className='gridElement'
+                />
+              </a>
+            </div>
           </div>
         </Section>
         {/* End of Third Section of the page */}
@@ -349,7 +359,8 @@ const IndexPage = () => {
         {/* Fourth Section of the page (Emulate a Designer)*/}
         <Section bgColor="bg-black" textColor="text-white">
           <h2
-            className="text-7xl flex justify-center font-bold
+            className="flex justify-center
+          font-bold text-7xl
           pt-24 pb-44"
           >
             Emulate a Designer
