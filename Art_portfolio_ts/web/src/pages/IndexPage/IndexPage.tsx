@@ -8,6 +8,7 @@ import Login from '../../components/Login'
 import Navbar from '../../components/Navbar'
 import Section from '../../components/Section'
 import Threed_model from '../../components/Threed_model'
+import GridBg from 'src/components/GridBg'
 
 const IndexPage = () => {
   //Title of the page
@@ -327,7 +328,7 @@ const IndexPage = () => {
             </div>
           </div>
         </Section>
-        {/* End of Third Section of the page */}
+        {/* End of second Section of the page */}
         <hr className="bg-red-500 h-2" />
         {/* Third Section of the page (Carrer Path)*/}
         <Section bgColor="bg-darkBlue" textColor="text-white">
@@ -343,8 +344,11 @@ const IndexPage = () => {
             This is pretty close to me because this is a career path that I'm
             choosing.
           </p>
-          <div className="w-full">
-            <div className="flex justify-center pt-24 pb-64">
+          <div className="w-full pt-16">
+            <div className='absolute w-full h-full'>
+                <GridBg />
+            </div>
+            <div className="relative flex justify-center pt-24 pb-64 z-10">
               <img
                 className="shadow-2xl"
                 src="images/WebDevRessons.svg"
